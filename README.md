@@ -1,6 +1,6 @@
 # 💳 Credit Card Fraud Detection
 
-> End-to-end fraud detection system using Python, XGBoost and Power BI — identifying $56,033 in recoverable fraud with 96% detection rate across 284,807 transactions.
+> End-to-end fraud detection system using Python, XGBoost and Power BI — identifying $58,000 in recoverable fraud with 97.4% detection rate across 284,807 transactions.
 
 ---
 
@@ -40,7 +40,7 @@ This project builds an automated machine learning pipeline to:
 - **Size:** 284,807 transactions over 48 hours
 - **Fraud cases:** 492 (0.17% of total)
 - **Features:** V1–V28 (PCA transformed), Amount, Time, Class
-- **Note:** Dataset not included due to file size. Download from Kaggle and place at `/Users/mac/creditcard.csv` or update the path in each notebook.
+- **Note:** Dataset not included due to file size. Download from Kaggle and update the file path in each notebook to match your local setup.
 
 ---
 
@@ -56,9 +56,9 @@ This project builds an automated machine learning pipeline to:
 3. **Peak fraud hour** — 2am has the highest fraud rate at 1.713% — 
    over 6x the daily average of 0.275%. Overnight hours need extra monitoring.
 
-4. **Highest losses in mid-range transactions** — The \$100–\$500 bucket 
-   accounts for the highest total fraud losses despite not having the 
-   most fraud cases.
+4. **Highest losses in mid-range transactions** — The \$500–\$5k bucket 
+   accounts for the highest total fraud losses, followed closely by 
+   the \$100–\$500 range.
 
 ---
 
@@ -87,9 +87,9 @@ over overall F1 score.
 | Total fraud cases | 492 |
 | Fraud rate | 0.17% |
 | Total fraud dollar amount | \$60,128 |
-| Fraud caught by model | \$56,033 |
-| Fraud missed by model | \$4,094 |
-| **Overall detection rate** | **96%** |
+| Fraud caught by model | \$58,292 |
+| Fraud missed by model | \$1,836 |
+| **Overall detection rate** | **97.4%** |
 
 ---
 
@@ -107,7 +107,7 @@ over overall F1 score.
    at 1.713% — over 6x the daily average. Schedule additional 
    automated alerts during the 12am–4am window.
 
-4. **Focus on mid-range transactions** — The \$100–\$500 range 
+4. **Focus on high value transactions** — The \$500–\$5k range 
    accounts for the highest total fraud losses. Apply stricter 
    verification for transactions in this range.
 
@@ -162,11 +162,10 @@ Then open and run notebooks 01 through 05 in order.
 
 ## 📌 Notes
 
-- The `creditcard.csv` file is not included. Download from Kaggle and update the file path 
+- The `creditcard.csv` file is not included due to GitHub's 100MB 
+  file size limit. Download from Kaggle and update the file path 
   in each notebook to match your local setup.
 - Dollar figures in the modeling notebook reflect test set performance 
   (20% of data). The Power BI dashboard reflects the full dataset. 
   Both are valid — the notebook shows model evaluation, the dashboard 
   shows full business impact.
-```
-
