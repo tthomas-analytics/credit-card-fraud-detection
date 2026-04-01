@@ -44,17 +44,17 @@ This project builds an automated machine learning pipeline to:
 
 ## 🔑 Key Findings
 
-1. **Severe class imbalance** — Only 0.17% of transactions are fraud. 
+1. **Severe class imbalance**: Only 0.17% of transactions are fraud. 
    Accuracy is a misleading metric here — we use Precision, Recall and F1 instead.
 
-2. **Card testing pattern** — Median fraud transaction is \$9.25 vs \$22.00 
+2. **Card testing pattern**:  Median fraud transaction is \$9.25 vs \$22.00 
    for legitimate transactions. Fraudsters test stolen cards with small 
    purchases before escalating to larger amounts.
 
-3. **Peak fraud hour** — 2am has the highest fraud rate at 1.713% — 
+3. **Peak fraud hour**: 2am has the highest fraud rate at 1.713% — 
    over 6x the daily average of 0.275%. Overnight hours need extra monitoring.
 
-4. **Highest losses in mid-range transactions** — The \$500–\$5k bucket 
+4. **Highest losses in mid-range transactions**:  The \$500–\$5k bucket 
    accounts for the highest total fraud losses, followed closely by 
    the \$100–\$500 range.
 
@@ -93,23 +93,23 @@ over overall F1 score.
 
 ## ✅ Recommendations
 
-1. **Deploy model as real time scoring engine** — Every transaction 
+1. **Deploy model as real time scoring engine**:  Every transaction 
    receives a fraud probability score before approval. Auto-block 
    transactions with score above 80%.
 
-2. **Implement velocity checks** — Flag cards making multiple 
+2. **Implement velocity checks**:  Flag cards making multiple 
    transactions under \$10 in a short time window. This directly 
    targets the card testing pattern identified in the data.
 
-3. **Increase overnight monitoring** — Fraud rate peaks at 2am 
+3. **Increase overnight monitoring**:  Fraud rate peaks at 2am 
    at 1.713% — over 6x the daily average. Schedule additional 
    automated alerts during the 12am–4am window.
 
-4. **Focus on high value transactions** — The \$500–\$5k range 
+4. **Focus on high value transactions**: The \$500–\$5k range 
    accounts for the highest total fraud losses. Apply stricter 
    verification for transactions in this range.
 
-5. **Retrain model quarterly** — Fraud patterns evolve over time. 
+5. **Retrain model quarterly**: Fraud patterns evolve over time. 
    Regular retraining ensures the model stays effective against 
    new fraud techniques.
 
