@@ -1,6 +1,6 @@
 # 💳 Credit Card Fraud Detection
 
-> End-to-end fraud detection system using Python, XGBoost and Power BI — identifying $58,000 in recoverable fraud with 97.4% detection rate across 284,807 transactions.
+> End-to-end fraud detection system using Python, XGBoost and Power BI; identifying $58,000 in recoverable fraud with 97.4% detection rate across 284,807 transactions.
 
 ---
 
@@ -160,9 +160,6 @@ Then open and run notebooks 01 through 05 in order.
 
 ## 📌 Notes
 
-- The `creditcard.csv` file is not included due to GitHub's 100MB 
-  file size limit. Download from Kaggle and update the file path 
-  in each notebook to match your local setup.
 - Dollar figures in the modeling notebook reflect test set performance 
   (20% of data). The Power BI dashboard reflects the full dataset. 
   Both are valid — the notebook shows model evaluation, the dashboard 
