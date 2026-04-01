@@ -5,8 +5,7 @@
 ---
 
 ## 📊 Power BI Dashboard
-
-![Fraud Detection Dashboard](Powerbi%20Dashboard.jpg)
+![Fraud Detection Dashboard](Powebi%20Dashboard.jpg)
 ---
 
 ## 🔍 Problem Statement
